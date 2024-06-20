@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Rules 
+   1. bat defeats ball
+   2. ball defeats stumps
+   3. stump defeats bat
+  -->
+
+
+
+  <h1>Bat Ball Stump Game</h1>
+
+
+
+
+  <!-- Bat button -->
+  <button onclick="
+  computerChoice = generateComputerChoice()
+
+  let resultMsg = getResult('Bat',computerChoice)
+
+   showResult('Bat', computerChoice, resultMsg)
+  ">Bat</button>
+
+
+
+
+  <!-- Ball button -->
+  <button onclick="
+  computerChoice = generateComputerChoice()
+  
+ resultMsg = getResult('Ball',computerChoice)
+
+  showResult('Ball', computerChoice, resultMsg)
+  ">Ball</button>
+
+
+
+
+
+ <!-- Stump button -->
+<button onclick="
+  computerChoice = generateComputerChoice()
+  resultMsg = getResult('Stump',computerChoice)
+  showResult('Stump', computerChoice, resultMsg)
+  ">Stump</button>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
